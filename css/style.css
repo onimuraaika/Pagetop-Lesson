@@ -1,3 +1,4 @@
+/*cssがhtmlファイルと別の場所に存在する時、文字コードを決定しなければならない*/
 @charset "UTF-8";
 
 * {
@@ -5,21 +6,25 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 h1 {
   text-align: center;
   margin: 50px 0;
 }
+
 .box {
   height: 300px;
   width: 600px;
   margin: 0 auto 50px;
   background-color: #eee;
 }
+
 #back {
-  position: fixed;
+  position: fixed; /*「トップへ戻る」ボタンは常に同じ位置にあり続ける*/
   right: 20px;
   bottom: 20px;
 }
+
 #back img {
   width: 50px;
 }
